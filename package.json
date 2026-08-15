@@ -1,11 +1,18 @@
 {
   "author": "the_sociophobic",
   "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "workspaces": [
+    "parcel"
+  ],
   "dependencies": {
     "express": "^4.17.1"
   },
   "scripts": {
     "start": "node app.js",
-    "build": "cd parcel && yarn build"
+    "build": "yarn workspace logo_parcel build"
   }
 }
