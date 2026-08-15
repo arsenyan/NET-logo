@@ -80,4 +80,7 @@ app.get('/*', function(req, res) {
   res.send("NET festival 3d widget files on this port");
 });
 
-app.listen(3010, () => console.log("NET festival 3d widget files served on port 3010 via http"))
+const port = process.env.PORT || 3010
+app.listen(port, "0.0.0.0", () =>
+  console.log(`NET festival 3d widget files served on port ${port} via http`)
+)
