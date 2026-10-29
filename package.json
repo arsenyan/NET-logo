@@ -14,5 +14,8 @@
   "scripts": {
     "start": "node app.js",
     "build": "yarn workspace logo_parcel build"
+  },
+  "resolutions": {
+    "source-map-js": "^1.2.2"
   }
 }
